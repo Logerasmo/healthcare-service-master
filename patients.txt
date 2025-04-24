@@ -1,0 +1,2 @@
+{"id":"f95a1924-3a79-4340-b39d-960d76e42767","name":"Иван","surname":"Петров","birthday":"1980-11-26","healthInfo":{"normalTemperature":36.65,"bloodPressure":{"high":120,"low":80}}}
+{"id":"6e04621c-c78c-46c2-91f6-95df91928412","name":"Семен","surname":"Михайлов","birthday":"1982-01-16","healthInfo":{"normalTemperature":36.6,"bloodPressure":{"high":125,"low":78}}}
