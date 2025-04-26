@@ -1,3 +1,5 @@
+package ru.netology.patient.service.medical;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
@@ -7,39 +9,16 @@ import ru.netology.patient.entity.HealthInfo;
 import ru.netology.patient.entity.PatientInfo;
 import ru.netology.patient.repository.PatientInfoRepository;
 import ru.netology.patient.service.alert.SendAlertService;
-import ru.netology.patient.service.medical.MedicalService;
-import ru.netology.patient.service.medical.MedicalServiceImpl;
 
-import java.io.PrintStream;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
-import java.util.UUID;
+public class MedicalServiceTest {
 
-public class Tests {
-    @Test
-    public void BloodPressureTest(){
-        BloodPressure bloodPressure = new BloodPressure(80, 120);
-        Assertions.assertEquals(80, bloodPressure.getHigh());
-        Assertions.assertEquals(120, bloodPressure.getLow());
-    }
+
 
     @Test
-    public void HealthinfoTest(){
-        BloodPressure bloodPressure = Mockito.mock(BloodPressure.class);
-        Mockito.when(bloodPressure.toString())
-                .thenReturn("BloodPressure{" +
-                        "high=" + 120 +
-                        ", low=" + 80 +
-                        '}');
-        HealthInfo healthInfo = new HealthInfo(BigDecimal.valueOf(37.6), bloodPressure);
-        Assertions.assertEquals("HealthInfo{" +
-                "normalTemperature=" + "37.6" +
-                ", bloodPressure=" + bloodPressure.toString() +
-                '}', healthInfo.toString());
-    }
-    @Test
-    public void MedicalServiceTest(){
+    public void MedicalServiceTst(){
         //PrintStream mockPrintStream = Mockito.mock(PrintStream.class);
         //System.setOut(mockPrintStream);
 
